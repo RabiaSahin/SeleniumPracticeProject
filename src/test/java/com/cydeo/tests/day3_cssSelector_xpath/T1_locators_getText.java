@@ -9,9 +9,11 @@ public class T1_locators_getText {
 
     public static void main(String[] args) {
         //TC #1: NextBaseCRM, locators and getText() practice
+
         //1- Open a Chrome browser
-        //WebDriverManager.chromedriver().setup();
-        //WebDriver driver = new ChromeDriver();
+
+        //WebDriverManager.chromedriver().setup(); -> set driver
+        //WebDriver driver = new ChromeDriver(); -> open (instance) driver
         WebDriver driver = WebDriverFactory.getDriver("chrome");
 
         driver.manage().window().maximize();
@@ -20,12 +22,12 @@ public class T1_locators_getText {
         driver.get("https://login1.nextbasecrm.com/");
 
         //3- Enter incorrect username: “incorrect”
-        //driver.findElement(By.className("login-inp")).sendKeys("incorrect");
+        //driver.findElement(By.className("login-inp")).sendKeys("incorrect"); // this type it is not reusable
         WebElement inputUsername = driver.findElement(By.className("login-inp"));
         inputUsername.sendKeys("incorrect");
 
         //4- Enter incorrect password: “incorrect”
-        //To auto generate local variable
+        //To auto generate local variable => assign the value to variable
         //Mac: option + enter
         //Windows: alt + enter
         WebElement inputPassword = driver.findElement(By.name("USER_PASSWORD"));

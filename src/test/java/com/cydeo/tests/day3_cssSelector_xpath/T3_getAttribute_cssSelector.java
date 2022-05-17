@@ -21,8 +21,8 @@ public class T3_getAttribute_cssSelector {
         //WebElement signInButton = driver.findElement(By.className("login-btn"));
 
         //LOCATING THE SAME WEB ELEMENT USING DIFFERENT ATTRIBUTE VALUES.
-        //	                   tagName[attribute='value']
-        //	                   input[class='login-btn']
+        //	                                                         tagName[attribute='value']
+        //	                                                        input[class='login-btn']
         // LOCATED USING CLASS ATTRIBUTE
         //WebElement signInButton = driver.findElement(By.cssSelector("input[class='login-btn']"));
         // LOCATED USING TYPE ATTRIBUTE
