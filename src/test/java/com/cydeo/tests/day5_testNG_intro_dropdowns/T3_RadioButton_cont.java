@@ -27,7 +27,6 @@ public class T3_RadioButton_cont {
         clickAndVerifyRadioButton(driver, "sport", "football");
 
         clickAndVerifyRadioButton(driver, "color", "yellow");
-
     }
 
     private static void clickAndVerifyRadioButton(WebDriver driver, String nameAttribute, String idValue){
@@ -44,7 +43,5 @@ public class T3_RadioButton_cont {
                 break;
             }
         }
-
     }
-
 }
