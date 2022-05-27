@@ -92,7 +92,7 @@ public class T3_CRM_Login {
         CRM_Utilities.crm_login(driver, "helpdesk2@cybertekschool.com", "UserUser" );
 
         //6. Verify title is as expected:
-        //Expected: Portal
+        //Expected: (2) Portal
         //BrowserUtils.sleep(2);
         BrowserUtils.verifyTitle(driver, "(2) Portal");
 
