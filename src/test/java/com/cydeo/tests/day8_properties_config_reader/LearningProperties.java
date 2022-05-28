@@ -10,7 +10,11 @@ public class LearningProperties {
         //os.name = Mac OS X
         //user.name = cybertekchicago-1
         System.out.println("System.getProperty(\"os.name\") = " + System.getProperty("os.name"));
+        // it shows us whatever our current operating system.
+        // System.getProperty("os.name") = Windows 10
         System.out.println("System.getProperty(\"user.name\") = " + System.getProperty("user.name"));
+        // it shows us whatever our current username.
+        // System.getProperty("user.name") = rabia
 
     }
 
