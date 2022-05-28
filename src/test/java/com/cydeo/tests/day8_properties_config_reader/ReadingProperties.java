@@ -15,9 +15,11 @@ public class ReadingProperties {
 
         //2- We need to open the file in java memory: FileInputStream
         FileInputStream file = new FileInputStream("configuration.properties");
+        // FileInputStream hata veriyordu cunku exception
 
         //3- Load the properties object using FileInputStream object
-        properties.load(file);
+        properties.load(file); // load hata veriyordu cunku exception. right click and throws IOException yaptik
+        // IOException super class oldugu icin yukardakini de duzeltti
 
         //4- Use "properties" object to read value
 
