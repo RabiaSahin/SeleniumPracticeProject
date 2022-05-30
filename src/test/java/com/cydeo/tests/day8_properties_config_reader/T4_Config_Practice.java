@@ -26,7 +26,7 @@ public class T4_Config_Practice {
 
     @Test
     public void google_search_test(){
-        //Driver.getDriver() --> driver
+        //Driver.getDriver() Driver utility classta getDriver method create ettik --> driver in yerine onu kullaniyoruz
 
         Driver.getDriver().get("https://www.google.com");
 
