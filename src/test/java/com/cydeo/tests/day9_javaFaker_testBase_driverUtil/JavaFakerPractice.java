@@ -38,6 +38,8 @@ public class JavaFakerPractice {
 
         System.out.println(faker.numerify("##/##/####"));
         System.out.println(faker.date().birthday());
+        System.out.println(faker.number().numberBetween(1,12)+"/"+faker.number().numberBetween(1,31)+"/"+faker.number().numberBetween(2000,2022));
+
 
     }
 }
