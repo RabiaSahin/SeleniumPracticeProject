@@ -16,8 +16,8 @@ public class T2_Upload_Practice {
         Driver.getDriver().get("https://practice.cydeo.com/upload");
 
         //2. Find some small file from your computer, and get the path of it.
-        String path = "/Users/cybertekchicago-1/Desktop/HTML Class/cybertruck.jpg";
-
+       // String path = "/Users/cybertekchicago-1/Desktop/HTML Class/cybertruck.jpg"; // file path of Gurhan
+        String path = "C:\\Users\\rabia\\Desktop\\list.png"; //file path of my computer
         /*
         String path ="C:\\Users\\hayat\\Desktop\\note.txt";
          */
