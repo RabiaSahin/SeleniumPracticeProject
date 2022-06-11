@@ -23,11 +23,11 @@ public class DynamicControlsPage {
     public WebElement checkbox;
 
     //@FindBy(xpath = "//p[@id='message']")
-    @FindBy(css = "p[id='message']")
+    @FindBy(css = "p[id='message']") // message is same for 2 test on the ExplicitWaitPractice
     public WebElement message;
 
-    @FindBy(xpath = "//button[.='Enable']")
-    public WebElement enableButton;
+    @FindBy(xpath = "//button[.='Enable']") // enable is same for 2 test on the ExplicitWaitPractice
+    public WebElement enableButton; // enable means interact with so etkilesim icinde olmak
 
     @FindBy(css = "input[type='text']")
     public WebElement inputBox;
