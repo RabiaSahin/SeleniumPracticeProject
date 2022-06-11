@@ -8,12 +8,13 @@ import org.testng.annotations.Test;
 
 public class POMPractices {
 
-    LibraryLoginPage libraryLoginPage;
+    LibraryLoginPage libraryLoginPage; // In this line, we are creating the object but we are not instantiating.
 
     @BeforeMethod
     public void setupMethod(){
         Driver.getDriver().get("https://library1.cydeo.com/");
-        libraryLoginPage = new LibraryLoginPage();
+        libraryLoginPage = new LibraryLoginPage(); // this is creating the object itself. you are calling the constructor
+                                                // and the constructor is the part that is actually creating the object.
     }
 
     @Test
