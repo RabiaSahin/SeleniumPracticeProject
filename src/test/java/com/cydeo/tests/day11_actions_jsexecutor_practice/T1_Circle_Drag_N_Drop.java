@@ -18,12 +18,16 @@ public class T1_Circle_Drag_N_Drop {
         WebElement acceptCookiesButton = Driver.getDriver().findElement(By.id("onetrust-accept-btn-handler"));
         acceptCookiesButton.click();
 
+        Actions actions = new Actions(Driver.getDriver());
+        WebElement axisLink = Driver.getDriver().findElement(By.xpath("//h4[text() = 'Axis']"));
+        actions.moveToElement(axisLink).perform();
+
         //Locate small and big circles to be able to drag them around
         WebElement smallCircle = Driver.getDriver().findElement(By.id("draggable"));
         WebElement bigCircle = Driver.getDriver().findElement(By.id("droptarget"));
 
         //2. Drag and drop the small circle to bigger circle.
-        Actions actions = new Actions(Driver.getDriver());
+         actions = new Actions(Driver.getDriver());
 
       //  actions.dragAndDrop(smallCircle, bigCircle).perform();
 

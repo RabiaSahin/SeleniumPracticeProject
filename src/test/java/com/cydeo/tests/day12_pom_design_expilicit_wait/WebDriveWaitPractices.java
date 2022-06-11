@@ -3,6 +3,9 @@ package com.cydeo.tests.day12_pom_design_expilicit_wait;
 import com.cydeo.pages.DynamicLoad1Page;
 import com.cydeo.pages.DynamicLoad7Page;
 import com.cydeo.utilities.Driver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -25,6 +28,10 @@ public class WebDriveWaitPractices {
 
         //Create object of DynamicLoad7Page to reach and assert web elements
         DynamicLoad7Page dynamicLoad7Page = new DynamicLoad7Page();
+
+        Actions actions = new Actions(Driver.getDriver());
+        WebElement cydeoLink = Driver.getDriver().findElement(By.linkText("CYDEO"));
+        actions.moveToElement(cydeoLink).perform();
 
         //3. Assert: Message “Done” is displayed.
         Assert.assertTrue(dynamicLoad7Page.doneMessage.isDisplayed());
